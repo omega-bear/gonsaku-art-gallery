@@ -37,29 +37,30 @@ $COLOR_YELLOW : #FFFF00;
 // main
 .main {
 	@include Block100Pct;
-	position: absolute;
-	height: 100%;
 	z-index: 1;
-	.cv-wrap {
-		@include Block100Pct;
-		position: relative;
-		height: 100%;
-		z-index: 0;
-		> canvas {
-			display: block;
-			position: absolute;
-			width: auto;
-			height: auto;
-			top: 0;
-			left: 0;
-			right: 0;
-			margin: auto;
-			z-index: 1;
-		}
-	}
 }
 
 // game
 .game {
 	@include BgRainbow;
+}
+
+// mod-btn
+.mod-btn-wrap {
+	@include Block100Pct;
+	padding: 0 23%;
+}
+.mod-btn {
+	@include Block100Pct;
+	background: transparent;
+	outline: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	&:hover, &:active {
+		text-decoration: none;
+	}
+	img {
+		@include Block100Pct;
+	}
 }
